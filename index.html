@@ -15,5 +15,16 @@
   </head>
   <body class="bg-neutral-950 text-neutral-100 antialiased">
     <div id="root"></div>
+
+    <section id="uploader" style="max-width:720px;margin:2rem auto;padding:1.25rem;border:1px solid #404040;border-radius:12px;background:#171717">
+      <h2>Media uploaden</h2>
+      <p>Kies een muziek- of videobestand (maximaal 100 MB).</p>
+      <input id="fileInput" type="file" accept="audio/*,video/*" />
+      <button id="uploadBtn" type="button">Uploaden</button>
+      <p id="status" role="status" aria-live="polite"></p>
+      <ul id="filesList"></ul>
+    </section>
+
+    <script src="./supabase-upload.js" defer></script>
   </body>
 </html>
